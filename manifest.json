@@ -1,6 +1,6 @@
 {
   "name": "trustvox",
-  "vendor": "{account}",
+  "vendor": "tfdbl",
   "version": "0.0.1",
   "title": "RA Trustvox",
   "description": "Integrates with RA Trustvox",
@@ -26,7 +26,8 @@
         "type": "string",
         "access": "public",
         "title": "Store ID",
-        "description": "ID da loja no disponibilizado no painel da Trustvox"
+        "description": "ID da loja no disponibilizado no painel da Trustvox",
+        "default": 474
       },
       "colt": {
         "type": "number",

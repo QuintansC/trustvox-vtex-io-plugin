@@ -2,6 +2,8 @@ import React, { useContext, useEffect } from 'react'
 import { ProductSummaryContext } from 'vtex.product-summary'
 import { injectWidgetScripts } from "./services/ScriptHandler";
 
+import styles from './styles.css'
+
 const RatingInline = () => {
   const { product } = useContext(ProductSummaryContext)
 
@@ -14,7 +16,7 @@ const RatingInline = () => {
   }, [])
 
   return (
-    <div data-trustvox-product-code={product.productId} />
+    <div className={styles.ratingInline} data-trustvox-product-code={product.productId} />
   )
 }
 

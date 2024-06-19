@@ -3,6 +3,8 @@ import { ProductContext } from 'vtex.product-context'
 import { FormattedMessage } from 'react-intl'
 import { injectWidgetScripts, setProduct } from "./services/ScriptHandler";
 
+import styles from './styles.css'
+
 const RatingSummary = () => {
   const { product } = useContext(ProductContext)
 
@@ -28,7 +30,7 @@ const RatingSummary = () => {
   }, [product.productId]);
 
   return (
-    <div className="trustvox-rating">
+    <div className={`${styles.ratingSummary} trustvox-rating `}>
       <a
         className="trustvox-fluid-jump trustvox-widget-rating"
         href="#trustvox-reviews"

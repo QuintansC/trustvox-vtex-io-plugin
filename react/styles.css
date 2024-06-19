@@ -20,3 +20,10 @@
 .certificateTrustvoxContainer {}
 
 .ratingInlineTrustvox {}
+
+.ratingSummary{
+  width: 200px;
+}
+ .ratingInline{
+  width: 130px;
+ }
